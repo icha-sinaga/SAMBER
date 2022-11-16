@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitActivity"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/putih"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Sampah Barter"
+        android:layout_below="@id/img_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/green"
+        android:textSize="18dp"
+        android:id="@+id/txt_1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi mobile yang membantu masyarakat untuk melakukan pemilahan sampah dengan menukarkannya dalam bentuk poin, pembelian barang rumah tangga dengan menggunakan poin yang telah dikumpulkan, mengedukasi user mengenai pemilahan dan pengolahan sampah."
+        android:gravity="center"
+        android:layout_below="@id/txt_1"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/light_green"
+        android:padding="30dp"
+        android:id="@+id/txt_2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_2"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:id="@+id/btn_1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_1"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:id="@+id/btn_2"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
