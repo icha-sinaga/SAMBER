@@ -5,33 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".OnBoardingActivity"
-    >
+    tools:context=".OnBoarding">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsextra"
+        android:id="@+id/font1"
         />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="Next"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsextra"
+        android:id="@+id/font2"
+        />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:layout_alignParentBottom="true">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"/>
 
-        <com.google.android.material.tabs.TabLayout
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tabIndicatorHeight="0dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:overScrollMode="never"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/linear1"
+        android:id="@+id/page1"
+        />
 
 
 </RelativeLayout>

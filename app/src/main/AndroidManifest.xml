@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MacroChallengeSamber"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingActivity"
+            android:name=".OnBoarding"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
