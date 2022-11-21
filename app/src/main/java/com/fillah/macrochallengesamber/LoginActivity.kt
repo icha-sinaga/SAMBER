@@ -13,7 +13,6 @@ class LoginActivity : AppCompatActivity() {
 
         backButtonListener()
         registerButtonListener()
-        forgotPassListener()
     }
     private fun backButtonListener() {
         back1.setOnClickListener {
@@ -23,11 +22,6 @@ class LoginActivity : AppCompatActivity() {
     private fun registerButtonListener() {
         reg2.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
-        }
-    }
-    private fun forgotPassListener() {
-        forgot.setOnClickListener {
-            startActivity(Intent(this, ForgotPassword::class.java))
         }
     }
 }
