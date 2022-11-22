@@ -13,19 +13,12 @@ class BantuanActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         backButtonListener()
-        csListener()
         faqListener()
     }
 
     private fun backButtonListener() {
         back1.setOnClickListener {
             startActivity(Intent(this, InitActivity::class.java))
-        }
-    }
-
-    private fun csListener(){
-        titleCs.setOnClickListener() {
-            startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
 
