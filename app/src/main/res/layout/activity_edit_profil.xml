@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfilActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/back1"/>
+
+    <TextView
+        android:id="@+id/tvProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Profil"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProfil"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/fotoProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="24dp"
+            />
+
+        <TextView
+            android:id="@+id/tvUbahFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fotoProfil"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blue"
+            android:text="Ubah Foto"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

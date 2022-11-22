@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/back1"/>
+
+    <TextView
+        android:id="@+id/tvFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="F.A.Q"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFaq"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Temukan jawaban dari pertanyaan anda!"
+        android:textColor="@color/green"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/searchFaq"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/descFaq"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fill_pass"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="Cari disini..."
+        android:textSize="12sp"
+        android:paddingLeft="15dp" />
+
+    <LinearLayout
+        android:id="@+id/listFaq"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/searchFaq"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFaq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listFaq"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Pertanyaan Anda"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/inputPertanyaan"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvPertanyaan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fill_pass"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="Ketik disini..."
+        android:paddingLeft="15dp"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputPertanyaan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Submit"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blue"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>
