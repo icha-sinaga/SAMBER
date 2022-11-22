@@ -14,7 +14,15 @@ class LoginActivity : AppCompatActivity() {
         backButtonListener()
         registerButtonListener()
         forgotPassListener()
+        loginListener()
     }
+    //coba2 untuk bantuan
+    private fun loginListener() {
+        log_1.setOnClickListener {
+            startActivity(Intent(this, BantuanActivity::class.java))
+        }
+    }
+
     private fun backButtonListener() {
         back1.setOnClickListener {
             startActivity(Intent(this, InitActivity::class.java))
