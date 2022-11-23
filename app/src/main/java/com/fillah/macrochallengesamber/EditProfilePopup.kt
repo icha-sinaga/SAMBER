@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_edit_profile_popup.*
 import kotlinx.android.synthetic.main.activity_edit_profile_popup.back1
-import kotlinx.android.synthetic.main.activity_login.*
 
 class EditProfilePopup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class EditProfilePopup : AppCompatActivity() {
 
     private fun backButtonListener() {
         back1.setOnClickListener {
-            startActivity(Intent(this, EditProfilActivity::class.java))
+            startActivity(Intent(this, EditProfileActivity::class.java))
         }
     }
 

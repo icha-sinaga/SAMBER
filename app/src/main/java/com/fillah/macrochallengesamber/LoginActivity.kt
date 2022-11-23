@@ -15,6 +15,7 @@ class LoginActivity : AppCompatActivity() {
         registerButtonListener()
         logInButtonListener()
         forgotPassListener()
+
     }
 
     private fun backButtonListener() {

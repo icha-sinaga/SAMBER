@@ -14,6 +14,14 @@ class BantuanActivity : AppCompatActivity() {
 
         backButtonListener()
         faqListener()
+        csListener()
+    }
+
+    //Coba Profile
+    private fun csListener(){
+        cs.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
     }
 
     private fun backButtonListener() {
@@ -23,7 +31,7 @@ class BantuanActivity : AppCompatActivity() {
     }
 
     private fun faqListener(){
-        titleFaq.setOnClickListener() {
+        faq.setOnClickListener() {
             startActivity(Intent(this, FaqActivity::class.java))
         }
     }

@@ -3,12 +3,7 @@ package com.fillah.macrochallengesamber
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.replace
-import com.fillah.macrochallengesamber.databinding.ActivityMainBinding
-import com.fillah.macrochallengesamber.fragment.HomeFragment
-import com.fillah.macrochallengesamber.fragment.NotificationFragment
-import com.fillah.macrochallengesamber.fragment.ProfileFragment
-import com.fillah.macrochallengesamber.fragment.RecycleFragment
+import com.fillah.macrochallengesamber.fragment.*
 import kotlinx.android.synthetic.main.activity_navigation2.*
 
 class NavigationAct : AppCompatActivity() {

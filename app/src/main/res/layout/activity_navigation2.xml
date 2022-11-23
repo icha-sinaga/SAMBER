@@ -21,14 +21,15 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/bottomNavigation"
         app:menu="@menu/bottom_nav"
-        android:background="@color/green"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
+        android:background="@drawable/bg_navbar"
         >
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
