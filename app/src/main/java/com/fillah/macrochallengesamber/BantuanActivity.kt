@@ -14,6 +14,14 @@ class BantuanActivity : AppCompatActivity() {
 
         backButtonListener()
         faqListener()
+        csListener()
+    }
+
+    //Coba Profile
+    private fun csListener(){
+        cs.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
     }
 
 
