@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditProfilActivity"
-    android:background="@color/white"
-    >
+    tools:context=".EditProfileActivity"
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -48,7 +47,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_user_black"
+            android:src="@drawable/user"
             android:layout_marginTop="22dp"
 
             />
@@ -221,3 +220,12 @@
     </LinearLayout>
 
 </RelativeLayout>
+
+
+
+
+
+
+
+
+

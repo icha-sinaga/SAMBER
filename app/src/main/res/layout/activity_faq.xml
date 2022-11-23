@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -44,7 +45,7 @@
     <EditText
         android:id="@+id/searchFaq"
         android:layout_width="380dp"
-        android:layout_height="57dp"
+        android:layout_height="44dp"
         android:layout_below="@+id/descFaq"
         android:layout_marginTop="8dp"
         android:layout_alignParentStart="true"
@@ -60,25 +61,188 @@
     <LinearLayout
         android:id="@+id/listFaq"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/searchFaq"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
 
         >
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvFaq"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical">
 
-            />
+            <TextView
+                android:id="@+id/tvQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Apa itu layanan Samber?"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQ1"
+                android:layout_marginBottom="12dp"
+                android:text="Kami melayani Anda untuk menukarkan sampah plastik anda hanya dengan menggunakan aplikasi kami dan pengepul akan menjemput sampah Anda."
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Apa yang Saya Dapatkan?"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQ2"
+                android:layout_marginBottom="12dp"
+                android:text="Sampah plastik yang anda berikan akan ditukarkan ke dalam bentuk poin. Poin tersebut nantinya dapat digunakan untuk melakukan proses pembelian dalam aplikasi."
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sampah apa yang bisa ditukarkan?"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvA3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQ3"
+                android:layout_marginBottom="12dp"
+                android:text="Anda dapat menukarkan berbagai jenis sampah plastik, mulai dari sampah botol plastik, kemasan makanan, kantong kresek, dan sejenisnya."
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Apa dampaknya bagi lingkungan?"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvA4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQ4"
+                android:layout_marginBottom="12dp"
+                android:text="Dengan memilah dan mengumpulkan sampah plastik, anda telah  menyelamatkan dunia dari proses pengolahan sampah plastik yang kurang tepat."
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
     <TextView
@@ -102,13 +266,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/fill_pass"
         android:fontFamily="@font/poppinssemibold"
         android:hint="Ketik disini..."
         android:paddingLeft="15dp"
         android:textSize="12sp"
+
+
         />
 
     <TextView
@@ -119,7 +285,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/poppinsregular"
         android:text="Submit"
@@ -127,6 +293,13 @@
         android:textColor="@color/blue"
         android:textSize="12sp" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar_bawah"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-14dp"
+        />
 
 
 </RelativeLayout>

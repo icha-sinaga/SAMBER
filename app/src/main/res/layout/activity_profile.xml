@@ -47,7 +47,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_user_black"
+            android:src="@drawable/user"
             android:layout_marginTop="22dp"
             />
 
@@ -224,11 +224,6 @@
         android:layout_below="@id/aturNotifikasi"
         android:layout_marginTop="48dp"
         />
-
-
-
-
-
 
 
 </RelativeLayout>

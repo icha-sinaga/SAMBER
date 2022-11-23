@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
         forgotPassListener()
     }
 
+
     private fun backButtonListener() {
         back1.setOnClickListener {
             startActivity(Intent(this, InitActivity::class.java))

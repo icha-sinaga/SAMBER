@@ -16,6 +16,7 @@ class BantuanActivity : AppCompatActivity() {
         faqListener()
     }
 
+
     private fun backButtonListener() {
         back1.setOnClickListener {
             startActivity(Intent(this, InitActivity::class.java))
@@ -23,7 +24,7 @@ class BantuanActivity : AppCompatActivity() {
     }
 
     private fun faqListener(){
-        titleFaq.setOnClickListener() {
+        faq.setOnClickListener() {
             startActivity(Intent(this, FaqActivity::class.java))
         }
     }
