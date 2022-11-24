@@ -5,85 +5,204 @@
     android:layout_height="match_parent"
     tools:context=".fragment.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_shape_popup"
+        android:id="@+id/layout1"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/image1"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_shape_popup"
-            android:id="@+id/layout1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/layout2"
             >
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_baseline_person_outline_24"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="32dp"
-                android:id="@+id/image1"
-                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:id="@+id/text01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user 1233"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/white"
+                android:id="@+id/text02"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="22dp"
-                android:layout_marginLeft="32dp"
-                android:id="@+id/layout2"
+                android:orientation="horizontal"
+                android:id="@+id/layout3"
                 >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Halo"
+                    android:text="poin kamu"
                     android:fontFamily="@font/poppinssemibold"
                     android:textColor="@color/white"
-                    android:id="@+id/text01"/>
+                    android:id="@+id/text03"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="user 1233"
-                    android:fontFamily="@font/poppinsbold"
+                    android:text="|"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:layout_marginLeft="20dp"
                     android:textColor="@color/white"
-                    android:id="@+id/text02"/>
+                    android:id="@+id/text04"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:id="@+id/layout3"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="poin kamu"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:textColor="@color/white"
-                        android:id="@+id/text03"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="|"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
-                        android:id="@+id/text04"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tukar Poin"
-                        android:fontFamily="@font/poppinsbold"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
-                        android:id="@+id/text05"/>
-                </LinearLayout>
-
+                    android:text="Tukar Poin"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/text05"/>
             </LinearLayout>
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/layout1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:text="Barter sampahmu"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/text09"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text09">
+
+        <LinearLayout
+            android:layout_width="97sp"
+            android:layout_height="97sp"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/shop"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinssemibold"
+                />
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97sp"
+            android:layout_height="97sp"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/history"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinssemibold"
+                />
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97sp"
+            android:layout_height="97sp"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/help"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bantuan"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinssemibold"
+                />
+
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 
 

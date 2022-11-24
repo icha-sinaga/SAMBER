@@ -11,38 +11,38 @@ class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-        supportActionBar?.hide()
+        supportActionBar?.hide()}}
 
 
-        backButtonListener()
-        editProfilListener()
-        aturNotifikasiListener()
-        keluarListener()
+//        backButtonListener()
+////        editProfilListener()
+////        aturNotifikasiListener()
+////        keluarListener()
+//
+//    }
+//
+//    private fun backButtonListener() {
+//        back1.setOnClickListener {
+//            startActivity(Intent(this, InitActivity::class.java))
+//        }
+//    }
 
-    }
+//    private fun editProfilListener() {
+//        lledit.setOnClickListener {
+//            startActivity(Intent(this, EditProfileActivity::class.java))
+//        }
+//    }
+//
+//    private fun aturNotifikasiListener() {
+//        llatur.setOnClickListener {
+//            startActivity(Intent(this, AturNotifikasiActivity::class.java))
+//        }
+//    }
 
-    private fun backButtonListener() {
-        back1.setOnClickListener {
-            startActivity(Intent(this, InitActivity::class.java))
-        }
-    }
+//    private fun keluarListener() {
+//        btnKeluar.setOnClickListener {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//        }
+//    }
 
-    private fun editProfilListener() {
-        lledit.setOnClickListener {
-            startActivity(Intent(this, EditProfileActivity::class.java))
-        }
-    }
-
-    private fun aturNotifikasiListener() {
-        llatur.setOnClickListener {
-            startActivity(Intent(this, AturNotifikasiActivity::class.java))
-        }
-    }
-
-    private fun keluarListener() {
-        btnKeluar.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
-    }
-
-}
+//}

@@ -7,223 +7,223 @@
     tools:context=".ProfileActivity"
     android:background="@color/white">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
-        android:layout_marginTop="32dp"
-        android:layout_marginLeft="32dp"
-        android:id="@+id/back1"/>
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_back"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:id="@+id/back1"/>-->
 
-    <TextView
-        android:id="@+id/tvProfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Profil"
-        android:layout_centerHorizontal="true"
-        android:textSize="16sp"
-        android:fontFamily="@font/poppinsbold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/tvProfil"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="Profil"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="16sp"-->
+<!--        android:fontFamily="@font/poppinsbold"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <LinearLayout
-        android:id="@+id/bio"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/tvProfil"
-        android:layout_marginTop="32dp"
-        android:orientation="vertical"
-        android:background="@drawable/border"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bio"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@+id/tvProfil"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/border"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp">-->
 
-        <ImageView
-            android:id="@+id/fotoProfil"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/user"
-            android:layout_marginTop="22dp"
-            />
+<!--        <ImageView-->
+<!--            android:id="@+id/fotoProfil"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:src="@drawable/user"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            />-->
 
-        <TextView
-            android:id="@+id/tvUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fotoProfil"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppinsbold"
-            android:gravity="center_horizontal"
-            android:text="User21321"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/tvUserName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/fotoProfil"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/poppinsbold"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="User21321"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="16sp" />-->
 
-        <TextView
-            android:id="@+id/tvPoin"
-            android:layout_width="match_parent"
-            android:layout_height="16sp"
-            android:layout_below="@+id/tvUserName"
-            android:layout_marginTop="2dp"
-            android:textColor="@color/black"
-            android:text="12300 Poinmu"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="12sp"
-            android:gravity="center_horizontal"
-            android:layout_marginBottom="22dp"
-            />
+<!--        <TextView-->
+<!--            android:id="@+id/tvPoin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="16sp"-->
+<!--            android:layout_below="@+id/tvUserName"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="12300 Poinmu"-->
+<!--            android:fontFamily="@font/poppinssemibold"-->
+<!--            android:textSize="12sp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="22dp"-->
+<!--            />-->
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/editProfil"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_below="@+id/bio"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:orientation="horizontal"
-        android:background="@drawable/button_shape">
-
-        <ImageView
-            android:id="@+id/imgWhatsapp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_user"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="48dp"
-            />
-
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/lledit"
-            android:layout_marginStart="24dp"
-            >
-
-            <TextView
-                android:id="@+id/titleEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="Edit Profil"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:layout_below="@+id/lledit"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="-2dp"
-                />
-
-            <TextView
-                android:id="@+id/descEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/titleEdit"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:fontFamily="@font/poppinsregular"
-                android:text="Ubah data akun anda"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:layout_marginTop="-2dp"
-                android:layout_marginBottom="4dp"/>
-        </LinearLayout>
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 
+<!--    <LinearLayout-->
+<!--        android:id="@+id/editProfil"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_below="@+id/bio"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/button_shape">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgWhatsapp"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/ic_user"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginStart="48dp"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/lledit"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/titleEdit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppinssemibold"-->
+<!--                android:text="Edit Profil"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_below="@+id/lledit"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_marginBottom="-2dp"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/descEdit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/titleEdit"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                android:text="Ubah data akun anda"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="-2dp"-->
+<!--                android:layout_marginBottom="4dp"/>-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
 
 
-    <LinearLayout
-        android:id="@+id/aturNotifikasi"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_below="@+id/editProfil"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:orientation="horizontal"
-        android:background="@drawable/button_shape">
 
-        <ImageView
-            android:id="@+id/imgWhatsapp2"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_notifications"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="48dp"
-            />
 
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/llatur"
-            android:layout_marginStart="24dp"
-            >
+<!--    <LinearLayout-->
+<!--        android:id="@+id/aturNotifikasi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_below="@+id/editProfil"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/button_shape">-->
 
-            <TextView
-                android:id="@+id/titleAtur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinssemibold"
-                android:text="Atur Notifikasi"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:layout_below="@+id/aturNotifikasi"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="-2dp"
-                />
+<!--        <ImageView-->
+<!--            android:id="@+id/imgWhatsapp2"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/ic_notifications"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginStart="48dp"-->
+<!--            />-->
 
-            <TextView
-                android:id="@+id/descAtur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/titleAtur"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:fontFamily="@font/poppinsregular"
-                android:text="Pengaturan notifkasi Sember"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:layout_marginTop="-2dp"
-                android:layout_marginBottom="4dp"
-                />
-        </LinearLayout>
-    </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/llatur"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            >-->
 
-    <Button
-        android:id="@+id/btnKeluar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_centerHorizontal="true"
-        android:text="Keluar"
-        android:textSize="16sp"
-        android:fontFamily="@font/poppinsbold"
-        android:textAllCaps="false"
-        android:background="@drawable/button_shape_logout"
-        android:textColor="#FF0000"
-        android:layout_below="@id/aturNotifikasi"
-        android:layout_marginTop="48dp"
-        />
+<!--            <TextView-->
+<!--                android:id="@+id/titleAtur"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppinssemibold"-->
+<!--                android:text="Atur Notifikasi"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_below="@+id/aturNotifikasi"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_marginBottom="-2dp"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/descAtur"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/titleAtur"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                android:text="Pengaturan notifkasi Sember"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="-2dp"-->
+<!--                android:layout_marginBottom="4dp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnKeluar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Keluar"-->
+<!--        android:textSize="16sp"-->
+<!--        android:fontFamily="@font/poppinsbold"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:background="@drawable/button_shape_logout"-->
+<!--        android:textColor="#FF0000"-->
+<!--        android:layout_below="@id/aturNotifikasi"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        />-->
 
 
 
