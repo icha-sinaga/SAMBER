@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SebelumLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_shape_popup"
+        android:id="@+id/layut1">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/gbr1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/layut2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Sampah Barter"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/white"
+                android:id="@+id/tet01"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Akses semua fitur di Samber dengan login"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:id="@+id/tet02"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/beras1_shape"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/green"
+                android:id="@+id/log12"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layut3"
+        android:layout_below="@id/layut1"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/about12"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/artikel1"
+            android:id="@+id/artikel2"/>
+    </LinearLayout>
+
+</RelativeLayout>

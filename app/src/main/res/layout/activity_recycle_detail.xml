@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RecycleFragment">
+    tools:context=".RecycleDetail">
 
     <ImageView
-        android:id="@+id/back09"
+        android:id="@+id/back090"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="120dp"
-        android:layout_toStartOf="@+id/tvShop08"
+        android:layout_toStartOf="@+id/tvShop080"
         android:src="@drawable/ic_back" />
 
     <TextView
-        android:id="@+id/tvShop08"
+        android:id="@+id/tvShop080"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -33,30 +33,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvShop08"
+        android:layout_below="@id/tvShop080"
         android:text="__________________________________________________"
         android:layout_centerHorizontal="true"
-        android:id="@+id/garis08"/>
+        android:id="@+id/garis080"/>
 
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/panjang"
-        android:layout_below="@id/garis08"
+        android:src="@drawable/detail_recycle"
+        android:layout_below="@id/garis080"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:id="@+id/panjang1"/>
+        android:id="@+id/panjang100"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/panjang1"
+        android:layout_below="@id/panjang100"
         android:layout_marginHorizontal="70dp"
         android:background="@drawable/button_shape"
         android:layout_marginTop="18dp"
-        android:text="Selanjutnya"
+        android:text="Konfirmasi"
         android:textColor="@color/white"
-        android:id="@+id/btn12"/>
+        android:id="@+id/btn120"
+        />
 
 </RelativeLayout>

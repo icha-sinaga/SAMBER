@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AkhirShop"
-    android:background="#69D9D9D9">
+    tools:context=".InfoSamber">
 
     <ImageView
-        android:id="@+id/back011"
+        android:id="@+id/back0111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="124dp"
-        android:layout_toStartOf="@+id/tvShop11"
+        android:layout_toStartOf="@+id/tvShop1111"
         android:src="@drawable/ic_back" />
 
     <TextView
-        android:id="@+id/tvShop11"
+        android:id="@+id/tvShop1111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Shop"
+        android:text="Info Samber"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:fontFamily="@font/poppinsbold"
@@ -34,47 +33,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvShop11"
+        android:layout_below="@id/tvShop1111"
         android:text="__________________________________________________"
         android:layout_centerHorizontal="true"
-        android:id="@+id/garis1"/>
+        android:id="@+id/garis1111"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/garis1"
-        android:background="@drawable/beras1_shape"
-        android:layout_marginTop="50dp"
+        android:layout_below="@id/garis1111"
         android:orientation="vertical"
-        android:layout_marginHorizontal="50dp">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
 
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:src="@drawable/akhir_shop"
-           android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anda Berhasil Melakukan Pembayaran Silahkan Mengambil Produk Anda di Vendor partner kami"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/poppinssemibold"
-            android:textColor="@color/black"/>
+            android:src="@drawable/samber_info"
+            android:id="@+id/img07"/>
 
-        <Button
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK"
-            android:background="@drawable/button_shape"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textColor="@color/white"
-            android:id="@+id/button12"/>
+            android:src="@drawable/notif_aktif"
+            android:id="@+id/img08"
+            android:layout_marginTop="20dp"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tukar_sampah"
+            android:id="@+id/img09"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
+
+
 
 </RelativeLayout>

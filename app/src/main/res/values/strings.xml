@@ -10,4 +10,17 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
 
+    //Headings
+    <string name="heading_one">Sampah Plastik Jadi Koin</string>
+    <string name="heading_two">Kemudahan Mengelola Sampah Plastik</string>
+    <string name="heading_three">Belanja Sembako Dan Barang Daur Ulang</string>
+    <string name="heading_fourth">Bantuan Samber</string>
+
+    //Description
+    <string name="desc_one">Kumpulkan sampah plastikmu dan tukar menjadi koin</string>
+    <string name="desc_two">Penjemput sampah plastik akan datang sesuai waktu dan tempat yang kamu tentukan</string>
+    <string name="desc_three">Koin yang sudah terkumpul dapat dipakai untuk belanja sembako dan barang daur ulang melalui Samber</string>
+    <string name="desc_fourth">Tersedia bantuan Samber untuk solusi dari permasalahanmu terkait Samber</string>
+
+
 </resources>

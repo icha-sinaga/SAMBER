@@ -40,8 +40,8 @@ class HomeFragment : Fragment() {
         lyt08.setOnClickListener {
             startActivity(Intent(this@HomeFragment.activity, MediaActivity::class.java))
         }
-        shop1.setOnClickListener {
+        text05.setOnClickListener {
             startActivity(Intent(this@HomeFragment.activity, ShopAct2::class.java))
-            }
+        }
         }
     }
