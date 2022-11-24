@@ -24,6 +24,7 @@ class BantuanActivity : AppCompatActivity() {
         }
     }
 
+
     private fun backButtonListener() {
         back1.setOnClickListener {
             startActivity(Intent(this, InitActivity::class.java))

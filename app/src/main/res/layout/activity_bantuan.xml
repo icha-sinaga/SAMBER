@@ -93,7 +93,7 @@
             android:id="@+id/imgFaq"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/whatsapp" />
+            android:src="@drawable/faq" />
 
         <LinearLayout
             android:layout_width="match_parent"
