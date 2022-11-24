@@ -3,6 +3,7 @@ package com.fillah.macrochallengesamber
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.fillah.macrochallengesamber.fragment.ProfileFragment
 import kotlinx.android.synthetic.main.activity_edit_profile.*
 import kotlinx.android.synthetic.main.activity_login.back1
 
@@ -24,7 +25,7 @@ class EditProfileActivity : AppCompatActivity() {
 
     private fun simpanButtonListener() {
         btnSimpan.setOnClickListener {
-            startActivity(Intent(this, EditProfilePopup::class.java))
+            startActivity(Intent(this, ProfileFragment::class.java))
         }
     }
 }

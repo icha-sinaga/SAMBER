@@ -25,7 +25,7 @@ class FaqActivity : AppCompatActivity() {
 
     private fun backButtonListener() {
         back1.setOnClickListener {
-            startActivity(Intent(this, InitActivity::class.java))
+            startActivity(Intent(this, BantuanActivity::class.java))
         }
     }
 

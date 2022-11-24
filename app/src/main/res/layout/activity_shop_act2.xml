@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopAct2">
+
+    <ImageView
+        android:id="@+id/back01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="124dp"
+        android:layout_toStartOf="@+id/tvShop"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/tvShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Shop"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvShop"
+        android:text="__________________________________________________"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/garis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:text="Sembako"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/text15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text15"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/lyt09">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/beras"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img01"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beras"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"
+                android:id="@+id/button11"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minyak"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minyak"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3550 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lyt09"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lyt10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mentega"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img03"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentega"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bawang"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img04"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bawang"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lyt10"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lyt01">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cabe"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img05"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cabe"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2500 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/roti"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/img06"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minyak"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000 poin"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="Beli"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/lyt01"-->
+<!--        android:text="Sembako"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:fontFamily="@font/poppinssemibold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:id="@+id/text16"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@id/text16"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:id="@+id/lyt13">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/beras"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img07"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Beras"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="5000 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:id="@+id/button111"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginLeft="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/minyak"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img09"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Minyak"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="3550 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@id/lyt13"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/lyt22">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/mentega"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img21"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mentega"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1000 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginLeft="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/bawang"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img20"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Bawang"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1500 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@id/lyt22"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/lyt153">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/cabe"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img113"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cabe"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="2500 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginLeft="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/roti"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:id="@+id/img24"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Minyak"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsbold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="2000 poin"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:text="Beli"-->
+<!--                android:textColor="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+</RelativeLayout>

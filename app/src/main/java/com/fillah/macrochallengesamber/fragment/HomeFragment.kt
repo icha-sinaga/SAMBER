@@ -1,15 +1,15 @@
 package com.fillah.macrochallengesamber.fragment
 
 import android.app.ActionBar
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.fillah.macrochallengesamber.HomeAdapter
-import com.fillah.macrochallengesamber.HomeModel
-import com.fillah.macrochallengesamber.R
+import com.fillah.macrochallengesamber.*
 import kotlinx.android.synthetic.main.fragment_home2.*
+import kotlinx.android.synthetic.main.fragment_profile2.*
 
 class HomeFragment : Fragment() {
     private lateinit var actionBar: ActionBar;
@@ -33,5 +33,15 @@ class HomeFragment : Fragment() {
 
         )
         view1.adapter = HomeAdapter(this@HomeFragment.context, list)
+
+        help1.setOnClickListener {
+            startActivity(Intent(this@HomeFragment.activity, BantuanActivity::class.java))
+        }
+        lyt08.setOnClickListener {
+            startActivity(Intent(this@HomeFragment.activity, MediaActivity::class.java))
+        }
+        shop1.setOnClickListener {
+            startActivity(Intent(this@HomeFragment.activity, ShopAct2::class.java))
+            }
+        }
     }
-}
